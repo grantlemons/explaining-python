@@ -37,3 +37,45 @@ my_dictionary = {
         'dictionary': 'ordered, changeable, and don\'t allow duplicates'
     }
 }
+
+# Here are some examples of using these
+# ----------------------------------------------------------
+# List
+print('-----------------------------')
+print( 'List' )
+print('-----------------------------')
+for i in my_list:
+    print( i )
+
+
+# Tuple
+print('-----------------------------')
+print( 'Tuple' )
+print('-----------------------------')
+try:
+    my_tuple.append( 'thing' )
+except:
+    print( 'this doesn\'t work' )
+    
+    
+# Set
+print('-----------------------------')
+print( 'Set' )
+print('-----------------------------')
+for i in my_set:
+    print( i )
+
+
+# Dictionary
+print('-----------------------------')
+print( 'Dictionary' )
+print('-----------------------------')
+for i in my_dictionary:
+    pass
+
+    if type( my_dictionary[i] ) == dict:
+        pass
+        for j in my_dictionary[i]:
+            print( f'      Key:\'{j}\' Value:\'{my_dictionary[i][j]}\'' )
+    else:
+        print( f'Key:\'{i}\' Value:\'{my_dictionary[i]}\'' )
